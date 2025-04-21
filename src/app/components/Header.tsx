@@ -8,7 +8,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="relative flex justify-between items-center py-16 overflow-x-hidden">
+    <header className="absolute w-full flex justify-between items-center py-[90px] overflow-x-hidden">
       <div className="ml-20">
         <Link href="/">
           <Image
@@ -21,9 +21,9 @@ const Header = () => {
         </Link>
       </div>
 
-      <span className="left-[160px] absolute border-neutral-600 border-1 w-full max-w-[45%] min-h-auto z-50"></span>
+      <span className="left-[9%] absolute border-neutral-600 border-1 w-full max-w-[33%] min-h-auto z-50"></span>
 
-      <nav className="font-barlow text-[28px] text-white uppercase tracking-[2.7px] backdrop-blur-xl px-[150px] h-32">
+      <nav className="font-barlow text-[20px] text-white uppercase tracking-[2.7px] backdrop-blur-xl px-[150px] h-32">
         <ul className="flex space-x-4 min-h-full">
           <li
             className={`min-h-full ${
@@ -58,7 +58,7 @@ const Header = () => {
           >
             <Link href="/destination">
               <span className="mr-2">
-                <strong>01</strong>
+                <strong>02</strong>
               </span>
               <span>DESTINATION</span>
             </Link>
@@ -70,7 +70,7 @@ const Header = () => {
           >
             <Link href="/technology">
               <span className="mr-2">
-                <strong>02</strong>
+                <strong>03</strong>
               </span>
               <span>TECHNOLOGY</span>
             </Link>

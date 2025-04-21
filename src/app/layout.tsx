@@ -14,8 +14,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased w-full h-full mx-auto">
-        <div className="bg-[url('/background-home-mobile.jpg')] md:bg-[url('/background-home-tablet.jpg')] lg:bg-[url('/background-home-desktop.jpg')] bg-cover bg-no-repeat bg-center min-h-screen text-white">
+      <body className="antialiased w-full h-full">
+        <div className="relative bg-[url('/background-home-mobile.jpg')] md:bg-[url('/background-home-tablet.jpg')] lg:bg-[url('/background-home-desktop.jpg')] bg-cover bg-no-repeat bg-center min-h-screen text-white w-full">
           <Header />
           {children}
         </div>
