@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <main className="grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-end h-screen text-center text-white font-bellefair">
+    <main className="bg-[url('/background-home-mobile.jpg')] md:bg-[url('/background-home-tablet.jpg')] lg:bg-[url('/background-home-desktop.jpg')] bg-cover bg-no-repeat bg-center min-h-full grid grid-cols-1 lg:grid-cols-2 place-items-center lg:place-items-end h-full text-center text-white font-bellefair pb-[200px]">
       {/* Description */}
       <div className="text-center lg:text-left px-16 mt-25 md:mt-40 lg:p-40">
         <h1 className="text-[10px]  md:text-[18px] leading-[32px] font-barlow uppercase tracking-[2.7px]">

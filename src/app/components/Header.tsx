@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="hidden absolute w-full lg:flex justify-between items-center py-[90px] overflow-x-hidden">
+      <header className="hidden absolute w-full lg:flex justify-between items-center pt-[45px] mb-[90px] overflow-x-hidden z-10">
         <div className="ml-20">
           <Link href="/">
             <Image
@@ -48,26 +48,26 @@ const Header = () => {
             </li>
             <li
               className={`min-h-full ${
-                pathname === "/crew" ? "border-b-4 border-b-white" : ""
-              } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
-            >
-              <Link href="/crew">
-                <span className="mr-2">
-                  <strong>01</strong>
-                </span>
-                <span>CREW</span>
-              </Link>
-            </li>
-            <li
-              className={`min-h-full ${
                 pathname === "/destination" ? "border-b-4 border-b-white" : ""
               } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
             >
               <Link href="/destination">
                 <span className="mr-2">
-                  <strong>02</strong>
+                  <strong>01</strong>
                 </span>
                 <span>DESTINATION</span>
+              </Link>
+            </li>
+            <li
+              className={`min-h-full ${
+                pathname === "/crew" ? "border-b-4 border-b-white" : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
+            >
+              <Link href="/crew">
+                <span className="mr-2">
+                  <strong>02</strong>
+                </span>
+                <span>CREW</span>
               </Link>
             </li>
             <li
@@ -85,7 +85,7 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <header className="flex absolute w-full lg:hidden justify-between px-3 py-4 items-center">
+      <header className="flex absolute w-full lg:hidden justify-between px-3 py-4 items-center z-10">
         <div className="">
           <Link href="/">
             <Image
@@ -135,18 +135,6 @@ const Header = () => {
             </li>
             <li
               className={`min-h-full ${
-                pathname === "/crew" ? "border-b-4 border-b-white" : ""
-              } border-solid flex items-center hover:border-b-4 border-b-neutral-400 my-4 pr-6`}
-            >
-              <Link href="/crew">
-                <span className="mr-2">
-                  <strong>01</strong>
-                </span>
-                <span>CREW</span>
-              </Link>
-            </li>
-            <li
-              className={`min-h-full ${
                 pathname === "/destination" ? "border-b-4 border-b-white" : ""
               } border-solid flex items-center hover:border-b-4 border-b-neutral-400 my-4 pr-8`}
             >
@@ -155,6 +143,18 @@ const Header = () => {
                   <strong>02</strong>
                 </span>
                 <span>DESTINATION</span>
+              </Link>
+            </li>
+            <li
+              className={`min-h-full ${
+                pathname === "/crew" ? "border-b-4 border-b-white" : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-400 my-4 pr-6`}
+            >
+              <Link href="/crew">
+                <span className="mr-2">
+                  <strong>01</strong>
+                </span>
+                <span>CREW</span>
               </Link>
             </li>
             <li
