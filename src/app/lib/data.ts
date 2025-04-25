@@ -78,7 +78,7 @@ export const technology: Technology[] = [
       "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch.",
     images: {
       portrait: "/image-spaceport-portrait.jpg",
-      landscape: "/image-spaceport-landscape.png",
+      landscape: "/image-spaceport-landscape.jpg",
     },
   },
   {
