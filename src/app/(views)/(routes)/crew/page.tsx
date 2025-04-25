@@ -28,7 +28,7 @@ const Crew = () => {
 
           {/* Tabs */}
           <div className="flex gap-4 mt-8">
-            {crewMembers.map((member, index) => (
+            {crewMembers.map((member) => (
               <button
                 key={member.name}
                 onClick={() => setActiveCrewMember(member)}
