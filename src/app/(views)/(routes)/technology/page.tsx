@@ -40,7 +40,7 @@ const Technology = () => {
               <button
                 key={tech.name}
                 onClick={() => setActiveTech(tech)}
-                className={`w-12 h-12 rounded-full border border-white text-white text-xl font-bellefair transition-all duration-300 ${
+                className={`w-12 h-12 rounded-full border border-white text-xl font-bellefair cursor-pointer transition-all duration-300 ${
                   activeTech.name === tech.name
                     ? "bg-white text-black"
                     : "bg-transparent hover:bg-white/20"

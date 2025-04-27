@@ -32,7 +32,7 @@ const Crew = () => {
               <button
                 key={member.name}
                 onClick={() => setActiveCrewMember(member)}
-                className={`w-4 h-4 rounded-full transition-all duration-300 ${
+                className={`w-4 h-4 cursor-pointer rounded-full transition-all duration-300 ${
                   activeCrewMember.name === member.name
                     ? "bg-white"
                     : "bg-gray-600 hover:bg-gray-400"
@@ -43,7 +43,7 @@ const Crew = () => {
         </div>
 
         {/* Image */}
-        <div className="flex justify-center items-end lg:justify-end lg:items-end">
+        <div className="flex justify-center items-end lg:justify-end lg:items-end min-h-full">
           <Image
             src={activeCrewMember.imageUrl}
             alt={activeCrewMember.name}

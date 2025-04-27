@@ -15,6 +15,7 @@ const Header = () => {
 
   return (
     <>
+      {/* Large Devices */}
       <header className="hidden absolute w-full lg:flex justify-between items-center pt-[45px] mb-[90px] overflow-x-hidden z-10">
         <div className="ml-20">
           <Link href="/">
@@ -85,7 +86,77 @@ const Header = () => {
           </ul>
         </nav>
       </header>
-      <header className="flex absolute w-full lg:hidden justify-between px-3 py-4 items-center z-10">
+      {/* Medium Devices */}
+      <header className="hidden absolute w-full lg:hidden md:flex justify-between items-center pt-[0px] mb-[90px] overflow-x-hidden z-10">
+        <div className="ml-2">
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              alt="Logo"
+              width={60}
+              height={60}
+              className="min-w-[60px] min-h-[60px]"
+            />
+          </Link>
+        </div>
+        <nav className="font-barlow text-[20px] text-white uppercase tracking-[2.7px] backdrop-blur-xl pr-[2px] h-32">
+          <ul className="flex space-x-4 min-h-full">
+            <li
+              className={`min-h-full ${
+                pathname === "/" || pathname === "/home"
+                  ? "border-b-4 border-b-white"
+                  : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
+            >
+              <Link href="/">
+                <span className="mr-2">
+                  <strong>00</strong>
+                </span>
+                <span>HOME</span>
+              </Link>
+            </li>
+            <li
+              className={`min-h-full ${
+                pathname === "/destination" ? "border-b-4 border-b-white" : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
+            >
+              <Link href="/destination">
+                <span className="mr-2">
+                  <strong>01</strong>
+                </span>
+                <span>DESTINATION</span>
+              </Link>
+            </li>
+            <li
+              className={`min-h-full ${
+                pathname === "/crew" ? "border-b-4 border-b-white" : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-400`}
+            >
+              <Link href="/crew">
+                <span className="mr-2">
+                  <strong>02</strong>
+                </span>
+                <span>CREW</span>
+              </Link>
+            </li>
+            <li
+              className={`min-h-full ${
+                pathname === "/technology" ? "border-b-4 border-b-white" : ""
+              } border-solid flex items-center hover:border-b-4 border-b-neutral-
+              400`}
+            >
+              <Link href="/technology">
+                <span className="mr-2">
+                  <strong>03</strong>
+                </span>
+                <span>TECHNOLOGY</span>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      {/* Small Devices */}
+      <header className="flex absolute w-full md:hidden justify-between px-3 py-4 items-center z-10">
         <div className="">
           <Link href="/">
             <Image
